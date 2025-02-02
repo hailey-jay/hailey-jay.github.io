@@ -1,0 +1,6 @@
+splashtxt = Array("Try the chocolate chip cookies!", "UWAH!!!", "Arf!!", "No mitsakes -- but undo is C-/ just in case.", "Emo induction, for transgender reasons!", "Caution: Hearing protection required!", "THE SNAIL!", "How... old is that onion?", "Have you tried 67 amps?", "Aaaand that's a nat 1. Sorry.", "There's nothing you can do! No one will believe you!", "The lesser of two weevils!", "Daemonic!", "Not all capacitors are built the same.", "You have to have some body positivity when you're making graphs.", "Sparkle? You're the whole tub of glitter, baby!", "Bing bong? I don't know.", "I'm just a girl from the middle of nowhere!", "I'm copylefting my gender!", "Copyleft womanhood!", "Save the dolphins!", "Renee Descartes, my mortal enemy!", "Heat from fire, fire from heat!", "Shut up and let me see your jazz hands!", "Coins, evil.", "LOUD INCORRECT BUZZER.", "I'm out of spell slots.", "Meowmeowmeow!", "Jet fuel ice tea, supersonic, lightspeed!!", "Take that kerosene and put it in my coffee!", "Gear up and blast off!", "Hyneri lanla!", "The Lockett monster of Bore Pit B!", "Succumbing to the bone broth madness...", "Welcome to my office hours!")
+
+
+RandomNumber = Math.floor(Math.random() * splashtxt.length);
+
+document.write(splashtxt[RandomNumber]);
