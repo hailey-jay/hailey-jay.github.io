@@ -75,7 +75,36 @@
 	I use Hestia to personify a lot of aspects about how I interact with my computer. Imagine that I think of Hestia as a typesetting artist who loves things looking nice and neat, and you'll be pretty close.
       </p>
     </div>
-<br>
+    <br>
+
+    <div>
+      <h2>hestia-latex</h2>
+      <p> The <code>hestia-latex</code> project is the biggest--and most public--of my Hestia projects. You can check it out <a href="https://github.com/hailey-jay/hestia-latex"> here<a>. It's divided into several parts:
+	<ul>
+	  <li><code>hestia</code></li>
+	  <li><code>hestia-journal</code></li>
+	  <li><code>hestia-symb</code></li>
+	  <li><code>hestia-cd</code></li>
+	  <li><code>hestia-mono</code></li>
+	  <li><code>hestia-extra</code></li>
+	</ul>
+	The first two are classes. To be honest, I'm unsatisfied with them as of current and I plan to build them up from scratch, but for now, they're a little basic.
+	<br><br>
+	First, <code>hestia</code>. It's just an article copy with a different title and page setup that's a little bit nicer for turning in homework. I'd never write a paper using it, though, I'd do that with a different template. I think my professor has a decent layout, even though I have massive philosophical differences with the way he codes.<br><br>
+	The other class file is <code>hestia-journal</code>. It's pulled from my old notes whenever I was self-studying for Advanced Calculus II and wanted to mimic my professor's style. Speaking of, I should probably put those up, minus the homework solutions, on my notes page. Can't hurt. I'll even put the source just in the case any undergrads want to make improvements on my poor notetaking skills!<br>
+	One might notice that the output of <code>hestia-journal</code> is similar to my notes currently. This is not quite true. While my current notes are based on <code>hestia-journal</code>, their customizations are entirely in the source because the project is a lot bigger than one style file. I do plan on folding them together, but that's a much bigger and much harder project.<br><br>
+	Now, the packages. The most important is <code>hestia-symb</code>. It's a collection of shorthands, command definitions, and other small customizations that I've collected over the years. My favorite feature? Proofs have my custom rose as their halmos instead of the box. It's a cute, personal touch and I insist upon it for my notes and homework.<br><br>
+	    Next, <code>hestia-cd</code>. It's a work in progress because I just learned Lua (as of early 2025) but it's incredibly helpful. It's a shorthand layer on top of <code>tikz-cd</code>, so it doesn't do anything crazy novel, but it is a rather elegant system in my opinion. I'll take the time to explain what it's doing!
+
+      <p align="center"><img src="hestia/cdin.png" alt="LaTeX source." align="center" style="width:400px"><img src="hestia/cdout.png" alt="A commutative diagram." align="center" style="width:400px"><br><br><small><i><code>hestia-cd</code> in action.</i></small><p>
+
+	The first line, neither A nor B have a defined location. So A is placed and B's location is determined by the arrow direction. The next two lines are the same; the fourth simply doesn't require a direction as both are already placed. The 5th line includes naming the arrow using <code>by ~phi</code>, replacing backslashes with tilde for compatibility issues. It also writes a dotted arrow, recognizing that <code>..\></code> and <code>--\></code> ought to mean different things. The last two things of note are showing off how brackets group words together fairly harmlessly, and <code>data</code> to reassign the content of object D.
+	<br><br>
+	The only two left, <code>hestia-extra</code> and <code>hestia-mono<code>, do what the say on the tin. The first, I doubt that it'll stay for a while. To be honest, I want to remove it at some point! The other stays. It's cool. Makes everything look like a typewriter.
+      </p>
+    </div>
+    
+    <br>
     <div>
       <h2>Everything Else</h2>
       <p>Why have two sections? LaTeX and everything else? Well, it's because I'm a little shy. The only things I really want to share on the internet is my LaTeX because, even if it's not quite the best, it's at least decent!<br><br>
@@ -89,7 +118,7 @@
 	Firstly: I come from TeXStudio. It was my first LaTeX editor and I loved it. Unfortunately, I outgrew it! I wanted something more customizable and I switched to Kate and eventually Emacs. A couple of the keybinds and functionalities from that, I took with me and now I find it much faster to delimit math both in $inline mode$ and \[display mode\].<br><br>
 	I also bound a lot of 'C-c' keys to environments. 'C-c n' gives 'enumerate', 'C-c p' gives proof, 'C-c e' gives a generic environment substitute for AucTeX's 'C-c C-e', etc.<br><br>
 	The last really cool customization is the shell command popouts. 'C-x C-r' runs my compiler with my custom settings, set in the options (I use LuaLaTex mostly) and refreshes the log file if it's open. I need it open more often than you'd think. I mess up a lot!<br><br>
-	There's a bunch of other little things---'x-space' ensures that I don't accidentally put math too close to text---but I think that's the gist.
+	There's a bunch of other little things--'x-space' ensures that I don't accidentally put math too close to text--but I think that's the gist.
       </p>
     </div>
     <br>
